@@ -1,0 +1,18 @@
+.about-user {
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+    
+    &__avatar-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    &__avatar-name {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}

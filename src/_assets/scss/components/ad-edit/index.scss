@@ -1,0 +1,38 @@
+.ad-edit {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &__image-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-top: 16px;
+    }
+    
+    &__image-figure {
+        margin: 0;
+        position: relative;
+        min-height: 120px;
+    }
+    
+    &__image {
+        object-fit: contain;
+        max-height: 120px;
+        object-position: top;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__image-delete-button {
+        min-width: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

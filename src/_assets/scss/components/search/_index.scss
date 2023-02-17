@@ -1,0 +1,19 @@
+.search {
+    margin: 0;
+    padding: 16px;
+    border: 0;
+    display: flex;
+    column-gap: 16px;
+    background-color: #ffffff;
+    
+    &__field {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    &__button {
+        height: 56px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

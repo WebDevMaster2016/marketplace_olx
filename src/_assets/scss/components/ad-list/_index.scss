@@ -1,0 +1,20 @@
+.ad-list {
+    --columns-size: 1;
+    
+    display: grid;
+    grid-template-columns: repeat(var(--columns-size), 1fr);
+    gap: 16px;
+    margin-top: 32px;
+    
+    @media (min-width: 400px) {
+        --columns-size: 2;
+    }
+    
+    @media (min-width: 600px) {
+        --columns-size: 3;
+    }
+    
+    @media (min-width: 1000px) {
+        --columns-size: 4;
+    }
+}

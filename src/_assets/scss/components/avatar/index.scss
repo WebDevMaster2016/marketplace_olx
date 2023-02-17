@@ -1,0 +1,23 @@
+.avatar {
+
+	&--profile {
+
+		&.css-2s90m6-MuiAvatar-root,
+		&.css-1wlk0hk-MuiAvatar-root {
+			width: 72px;
+			height: 72px;
+			background-color: #bdbdbd;
+		}
+	}
+	
+	&--header {
+		background-color: #bdbdbd;
+	}
+}
+
+.avatar-action {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	margin-bottom: 8px;
+}

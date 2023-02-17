@@ -1,0 +1,32 @@
+.home-link {
+    display: block;
+    text-decoration: none;
+}
+
+.logo {
+    
+    &__letter {
+        font-weight: 700;
+        color: #ffffff;
+        
+        &--h {
+            font-size: 24px;
+        }
+        
+        &--o {
+            font-size: 18px;
+            position: relative;
+            top: -2px;
+        }
+        
+        &--l {
+            font-size: 32px;
+            position: relative;
+            top: 2px;
+        }
+        
+        &--x {
+            font-size: 21px;
+        }
+    }
+}

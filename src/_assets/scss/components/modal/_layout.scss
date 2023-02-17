@@ -1,0 +1,60 @@
+.modal {
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: 400px;
+		width: calc(100% - 64px);
+		background-color: #fff;
+		box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+		padding: 16px;
+		border-radius: 16px;
+		
+		@media (min-width: 600px) {
+			padding: 32px;
+		}
+	}
+
+	&__tab-list {
+		max-width: 400px;
+		background-color: #007FFF;
+		border-radius: 12px;
+		margin-bottom: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: space-between;
+		box-shadow: 0 4px 8px #d0d7de;
+	}
+
+	&__tab-list-item {
+		color: white;
+		cursor: pointer;
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: transparent;
+		width: 100%;
+		padding: 12px;
+		margin: 6px 6px;
+		border: none;
+		border-radius: 7px;
+		display: flex;
+		justify-content: center;
+
+		&:hover {
+			background-color: #3399FF;
+		}
+
+		&:focus {
+			color: #fff;
+			outline: 3px solid #80BFFF;
+		}
+
+		&.Mui-selected {
+			background-color: #fff;
+			color: #0072E5;
+		}
+	}
+}

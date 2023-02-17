@@ -1,0 +1,37 @@
+.profile {
+    
+    &__fieldset {
+        //max-width: 50%;
+    }
+    
+    &__group {
+        display: grid;
+        column-gap: 20px;
+        
+        @media (min-width: 800px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    &__password {
+        margin-top: 32px;
+    
+        @media (min-width: 800px) {
+            margin-top: 0;
+        }
+    }
+    
+    &__ads-header {
+        margin-top: 48px;
+    }
+    
+    &__action {
+        
+        &.css-sghohy-MuiButtonBase-root-MuiButton-root {
+            font-size: 1rem;
+            margin-top: 24px;
+            width: 200px;
+            height: 50px;
+        }
+    }
+}

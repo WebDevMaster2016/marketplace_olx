@@ -1,0 +1,79 @@
+.ad {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    &__action-area-link {
+        color: initial;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    &__action-area {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+    }
+    
+    &__action-edit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        min-height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 100;
+        background-color: rgba(128, 128, 128, 0.4);
+    }
+    
+    &__card-image {
+        object-position: top;
+    }
+    
+    &__image-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(128, 128, 128, 0.4);
+        min-height: 140px;
+    }
+    
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    &__card-price {
+        padding-top: 20px;
+    }
+    
+    &__card-header {
+    
+        .css-et1ao3-MuiTypography-root {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+    }
+    
+    &__card-profile-link {
+        display: table-cell;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    &__description {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,15 @@
+.user-profile {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+
+	&__name {
+		display: none;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		@media (min-width: 600px) {
+			display: block;
+		}
+	}
+}

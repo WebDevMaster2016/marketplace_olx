@@ -1,0 +1,137 @@
+.ad-view {
+    $_this: &;
+    
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+    &__action-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__edit-button {
+        
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    
+    &__wrapper {
+        display: grid;
+        gap: 16px;
+        
+        @media (min-width: 800px) {
+            grid-template-columns: 1fr minmax(100px, 300px);
+        }
+    }
+    
+    &__box {
+        padding: 16px;
+        background-color: #ffffff;
+        
+        &--comments {
+            grid-column-start: 1;
+        }
+    }
+    
+    &__slider {
+        max-width: 256px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @media (min-width: 800px) {
+            max-width: 500px;
+        }
+    }
+    
+    &__swiper-slide {
+        padding-bottom: 32px;
+    }
+    
+    &__image {
+        display: block;
+        width: 100%;
+        user-select: none;
+    }
+    
+    &__owner {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+    
+    &__price {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    &__headline {
+        margin-top: 0;
+        
+        &--title {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__comments-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    
+    &__comment-outer {
+        display: grid;
+        column-gap: 16px;
+        row-gap: 8px;
+        grid-template-columns: 40px 1fr;
+    }
+    
+    &__comment-inner {
+        margin-top: 16px;
+        margin-left: 56px;
+    
+        #{$_this}__comment {
+        
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+    }
+    
+    &__comment-ava {
+        grid-row: 1/-1;
+    }
+    
+    &__comment-profile-link {
+        display: flex;
+        align-self: center;
+        justify-self: start;
+    }
+    
+    &__comment-time {
+        grid-column-start: 2;
+    }
+    
+    &__comment-text {
+        grid-column-start: 2;
+        margin: 0;
+    }
+    
+    &__answer-button {
+        grid-column-start: 2;
+        justify-self: start;
+    }
+    
+    &__answer-action {
+        grid-column-start: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    
+        &--root {
+            grid-column-start: 1;
+        }
+    }
+}

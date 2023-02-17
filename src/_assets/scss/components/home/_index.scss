@@ -1,0 +1,10 @@
+.hero {
+    
+    &__logo {
+        display: inline-block;
+        
+        .logo__letter {
+            color: #1976d2;
+        }
+    }
+}
